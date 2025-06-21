@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EntrenaConDaniel - Bienvenido</title>
+<style>
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+  }
+  header {
+    background: #27ae60;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+  }
+  .logo {
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    color: white;
+    font-family: 'Impact', sans-serif;
+    text-shadow: 2px 2px 4px #000;
+  }
+  .logo span {
+    color: #e67e22;
+  }
+  main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  section#contacto {
+    background: #222;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+  section#contacto h2 {
+    color: #27ae60;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  form input:focus, form textarea:focus {
+    outline: 2px solid #27ae60;
+  }
+  form button {
+    background: #e67e22;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+  form button:hover {
+    background: #d96a14;
+  }
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">Entrena<span>Con</span>Daniel</div>
+  </header>
+  <main>
+    <section id="bienvenida">
+      <h1>¡Bienvenido a EntrenaConDaniel!</h1>
+      <p>Tu espacio deportivo para equiparte y entrenar con la mejor energía. Aquí encontrarás accesorios deportivos pensados para potenciar tu rendimiento, desde la comodidad de tu casa o en el gimnasio.</p>
+      <p>Accesorios de calidad, precios accesibles y un compromiso con tu salud y bienestar.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <form action="mailto:tuemail@ejemplo.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required />
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 EntrenaConDaniel - Todos los derechos reservados
+  </footer>
+</body>
+</html>
