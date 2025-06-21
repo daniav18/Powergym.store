@@ -1,100 +1,129 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>EntrenaConDaniel - Bienvenido</title>
-<style>
-  body {
-    margin: 0; padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #121212;
-    color: #e0e0e0;
-  }
-  header {
-    background: #27ae60;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-  }
-  .logo {
-    font-weight: 900;
-    font-size: 2.5rem;
-    letter-spacing: 5px;
-    color: white;
-    font-family: 'Impact', sans-serif;
-    text-shadow: 2px 2px 4px #000;
-  }
-  .logo span {
-    color: #e67e22;
-  }
-  main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-  }
-  section#contacto {
-    background: #222;
-    padding: 30px 20px;
-    margin-top: 50px;
-    border-radius: 10px;
-  }
-  section#contacto h2 {
-    color: #27ae60;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  form {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  form label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: bold;
-  }
-  form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-  }
-  form input:focus, form textarea:focus {
-    outline: 2px solid #27ae60;
-  }
-  form button {
-    background: #e67e22;
-    border: none;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    width: 100%;
-    transition: background 0.3s ease;
-  }
-  form button:hover {
-    background: #d96a14;
-  }
-  footer {
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-    font-size: 0.9rem;
-    color: #555;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EntrenaConDaniel - Bienvenido</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+    }
+    header {
+      background: #27ae60;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .logo {
+      font-weight: 900;
+      font-size: 2.5rem;
+      letter-spacing: 5px;
+      color: white;
+      font-family: 'Impact', sans-serif;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .logo span {
+      color: #e67e22;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+    section#productos {
+      margin-top: 40px;
+    }
+    .producto {
+      background: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .producto img {
+      width: 100px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .producto-info {
+      flex: 1;
+    }
+    section#contacto {
+      background: #222;
+      padding: 30px 20px;
+      margin-top: 50px;
+      border-radius: 10px;
+    }
+    section#contacto h2 {
+      color: #27ae60;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    form input:focus, form textarea:focus {
+      outline: 2px solid #27ae60;
+    }
+    form button {
+      background: #e67e22;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #d96a14;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .social {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .social a {
+      color: #e67e22;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -107,9 +136,37 @@
       <p>Accesorios de calidad, precios accesibles y un compromiso con tu salud y bienestar.</p>
     </section>
 
+    <section id="productos">
+      <h2>Productos</h2>
+
+      <div class="producto">
+        <img src="tu-imagen1.jpg" alt="Producto 1" />
+        <div class="producto-info">
+          <h3>Bandas de resistencia</h3>
+          <p>Precio: [escribe aquí el precio]</p>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="tu-imagen2.jpg" alt="Producto 2" />
+        <div class="producto-info">
+          <h3>Botellas deportivas</h3>
+          <p>Precio: [escribe aquí el precio]</p>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="tu-imagen3.jpg" alt="Producto 3" />
+        <div class="producto-info">
+          <h3>Guantes de entrenamiento</h3>
+          <p>Precio: [escribe aquí el precio]</p>
+        </div>
+      </div>
+    </section>
+
     <section id="contacto">
       <h2>Contáctanos</h2>
-      <form action="mailto:tuemail@ejemplo.com" method="post" enctype="text/plain">
+      <form action="mailto:gympower2025@gmail.com" method="post" enctype="text/plain">
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre" required />
         <label for="email">Correo electrónico</label>
@@ -119,6 +176,10 @@
         <button type="submit">Enviar</button>
       </form>
     </section>
+
+    <div class="social">
+      <p>Síguenos en Instagram 👉 <a href="https://instagram.com/powerup_store_cl" target="_blank">@powerup_store_cl</a></p>
+    </div>
   </main>
 
   <footer>
